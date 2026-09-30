@@ -1,0 +1,22 @@
+# An example of environment variables required by the API
+
+# SQL Server connection string
+API_DATABASE_CONNECTION_STRING = "Server=(localdb)\MSSQLLocalDB;Database=VeridionBank;Trusted_Connection=True;TrustServerCertificate=True"
+
+# AES key for reversible fields
+API_AES_SECRETKEY = "hQ9kVv7YsB2mLpR4tXeC8nGdJfKwZaUo1i5TbN3rQyE="
+
+# HMAC key for the SHA3-384 lookup hashes
+API_SHA384_SECRETKEY = "7vTqXm2LpKdRwYbN8sHgCfEuZaJi4oPt1VcMx6yQnB3rWlDkSj9FhUeA0zGv"
+
+# https://www.exchangerate-api.com/ key (free tier is enough), used for card-to-card currency conversion
+API_EXCHANGERATE_KEY = "api key"
+
+# Gmail used to send emails to users
+API_EMAIL_ADDRESS = "someaddress@gmail.com"
+
+# Gmail App Password, not the account password
+API_EMAIL_PASSWORD = "app password"
+
+# RSA keys are not environment variables, they are .pem files under RSAKeys/AccessKeys/ and RSAKeys/RefreshKeys/
+# Generated automatically on first run in Development
